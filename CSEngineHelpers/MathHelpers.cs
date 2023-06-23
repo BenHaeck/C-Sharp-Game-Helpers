@@ -21,4 +21,8 @@ public class MathHelpers {
 		}
 		return (position, scale);
 	}
+
+	public static Vector2 ScreenToCanvas ((Vector2 pos, float scale) canvasVals, Vector2 point) {
+		return (point - canvasVals.pos) / canvasVals.scale;
+	}
 }
